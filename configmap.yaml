@@ -5,11 +5,11 @@ metadata:
   labels:
     app: nginx
 data:
-  nginx:conf: |
+  nginx.conf: |
     server {
       listen:80;
       index index.php index.html;
       root /usr/share/nginx/html;
-      
+
       rewrite ^/google$ http://google.com.br permanent;
     }
